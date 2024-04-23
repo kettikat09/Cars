@@ -14,7 +14,7 @@ h1 {
 
 
 #iframeheading {
-	color: #000000;
+	color: #2F4F4F;
 	text-align: center;
 	text-decoration: underline;
 }
@@ -42,7 +42,7 @@ ol {
 }
 
 nav {
-	background-color: #FFFFF0;
+	background-color: #808080;
 	color: #000000;
 	padding: 10px 0;
 	position: fixed;
@@ -58,7 +58,7 @@ nav ul li {
 }
 
 nav ul li a {
-	color: #FFFFFF;
+	color: #FFF0F5;
 }
 
 table {
