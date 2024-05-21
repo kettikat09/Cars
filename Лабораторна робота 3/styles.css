@@ -15,6 +15,7 @@ h1 {
 h2 {
 	color: #000000;
 	text-decoration: none!important;
+	margin-top: 50px;
 }
 
 h1 + h2 {
@@ -28,11 +29,30 @@ h1 + h2 {
 	text-decoration: underline;
 }
 
-.menu {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	text-align: center;
+p {
+    margin-bottom: 10px;
+}
+
+a {
+	text-decoration:none;
+}
+
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: purple;
+}
+
+a:active {
+	background-color: yellow;
+}
+
+a:hover {
+	color:red;
+	text-decoration: underline;
+	font-style: italic;
 }
 
 ul {
@@ -45,8 +65,27 @@ ol {
 	margin-left: 20px;
 }
 
-nav {
-	background-color: #808080;
+.highlight {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.image-container {
+	margin-bottom: 20px;
+}
+
+.float-right {
+	float: right;
+	margin-left: 20px;
+}
+
+.float-left {
+	float: left;
+	margin-right: 20px;
+}
+
+.menu-container {
+	background-color: #008080;
 	color: #000000;
 	padding: 10px 0;
 	position: fixed;
@@ -56,35 +95,63 @@ nav {
 	z-index: 1000;
 }
 
-nav ul li {
-	display: inline;
-	margin-right: 15px;
+.menu {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
 }
 
-nav ul li a {
+.menu li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.menu li:first-child {
+    font-weight: bold;
+	font-style: italic;
+}
+
+.menu li a {
 	color: #FFF0F5;
 	text-decoration: none;
 }
 
-table {
-	width: 100%;
-	border-collapse: collapse;
-	margin-top: 20px;
+.menu li a: hover {
+	color: #ff0000;
+	text-decoration: none;
 }
 
-table th, table td {
+.table-container {
+	margin-top: 20px;
+	overflow-x: auto;
+	margin-top: 50px;
+}
+
+.table-container table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table-container table th,
+.table-container table td {
 	border: 1px solid #000000;
-	padding: 6px;
+	padding: 8px;
 	text-align: center;
 }
 
-table th {
-	font-size: 120%;
-	background-color: #FFA07A;
-}
-
-tbody > tr {
-	background-color: #FFEBCD;
+.table-container thead > tr {
+	background-color: #BC8F8F;
 	font-weight: bold;
 	font-size: 120%;
+}
+
+h1::before {
+  content: "🚗🚗🚗";
+  display: block;
+}
+
+h1::after {
+  content: "🚙🚙🚙";
+  display: block;
 }
